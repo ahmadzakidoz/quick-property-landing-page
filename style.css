@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: #dddddd url("img/background.jpg") no-repeat fixed;
+  background-size: 100% 90vh;
+}
+
+header {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  color: azure;
+}
+
+.logo-container,
+.nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+.logo-container i {
+  font-size: 25px;
+  margin-top: 5px;
+}
+.text-logo {
+  margin: 6px 0px 0px 8px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  flex: 1;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: azure;
+}
+
+.btn-login {
+  border: 2px solid azure;
+  padding: 5px 8px;
+}
+.btn-login:hover {
+  background: white;
+  color: black;
+  border: 2px solid white;
+}
+
+/* SECTION : INTRODUCTION */
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 65vh;
+  margin: auto;
+  color: azure;
+  justify-content: center;
+}
+.intro {
+  width: 50%;
+}
+.intro h1 {
+  font-size: 44px;
+}
+.intro p {
+  font-size: 1.1rem;
+  margin: 20px 0px;
+}
+.learn-more {
+  font-size: 1.1rem;
+  margin-left: 15px;
+  color: azure;
+}
+.btn-get-started {
+  background: rgb(163, 36, 163);
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.follow-us {
+  margin-top: 40px;
+}
+
+.follow-us a {
+  color: rgb(171, 171, 235);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.follow-us a:hover {
+  color: white;
+}
+
+.why-us {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background: white;
+  color: rgb(142, 142, 216);
+  margin-bottom: 50px;
+}
+
+.box {
+  padding: 20px 50px;
+  text-align: center;
+}
+.box i {
+  margin: 10px 0px;
+}
+.box h4 {
+  margin-bottom: 10px;
+}
+.box p {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 100%;
+  }
+  .box {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  header {
+    display: grid;
+    height: 20vh;
+  }
+  .logo-container {
+    justify-content: center;
+  }
+  .logo-container i {
+    font-size: 40px;
+  }
+  .text-logo {
+    font-size: 1.5rem;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .why-us {
+    display: grid;
+  }
+}
